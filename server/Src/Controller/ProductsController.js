@@ -9,9 +9,9 @@ exports.ProductList=async (req, res) => {
     let Total;
     if (searchValue!=="0") {
         let SearchRgx = {"$regex": searchValue, "$options": "i"}
-        let SearchQuery = {$or: [{title: SearchRgx}]}
+        let SearchQuery = {$or: [{title: SearchRgx},{price: SearchRgx},{category: SearchRgx},{subcategory: SearchRgx},{brand: SearchRgx},{shop: SearchRgx},]}
 
-        Total = (await ProductsModel.aggregate([{$match: SearchQuery}, {$count: "total"}]))[0]['total']
+        // Total = (await ProductsModel.aggregate([{$match: SearchQuery}, {$count: "total"}]))[0]['total']
         Rows = await ProductsModel.aggregate([{$match: SearchQuery}, {$skip: skipRow}, {$limit: perPage}])
     } else {
         Total = (await ProductsModel.aggregate([{$count: "total"}]))[0]['total']
@@ -19,3 +19,19 @@ exports.ProductList=async (req, res) => {
     }
     res.status(200).json({status: "success", total: Total, data: Rows})
 }
+
+
+
+
+// exports.CreateProduct=(req,res)=>{
+//     let reqBody=req.body
+//     reqBody.email=req.headers['email'];
+//     ProductsModel.create(reqBody,(err,data)=>{
+//         if(err){
+//             res.status(200).json({status:"fail",data:err})
+//         }
+//         else{
+//             res.status(200).json({status:"success",data:data})
+//         }
+//     })
+// }

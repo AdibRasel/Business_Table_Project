@@ -41,17 +41,31 @@ App.use(Limiter)
 
 
 
-// Mongo DB Database Connection 
-let Url = "mongodb://127.0.0.1:27017/ProductList"  // ToDo হচ্ছে মঙ্গোডিভি ডাটাবেসের নাম, যে আগেই তৈরি করে নিতে হবে। 
-// let OPTION = {username:"", password:""}
-// Mongose.connect(Url, OPTION(error)=>{
+// Mongo DB Database Connection  ProductList
+// Rasal_Hossain 
+// mrhthvgvbnv
+let Url = "mongodb+srv://Rasal_Hossain:mrhthvgvbnv@cluster0.u9f9cje.mongodb.net/?retryWrites=true&w=majority"  // ToDo হচ্ছে মঙ্গোডিভি ডাটাবেসের নাম, যে আগেই তৈরি করে নিতে হবে। 
+// let OPTION = {username:"Rasal_Hossain", password:"mrhthvgvbnv"}
+// Mongose.connect(Url, OPTION,(error)=>{
+//     console.log("Mongo DB Datbase Connection Success")
+// })
+// Mongose.connect(Url,(error)=>{
 //     console.log("Mongo DB Datbase Connection Success");
 //     console.log(error)
 // })
-Mongose.connect(Url,(error)=>{
-    console.log("Mongo DB Datbase Connection Success");
-    console.log(error)
-})
+
+
+Mongose.connect('mongodb+srv://Rasal_Hossain:mrhthvgvbnv@cluster0.u9f9cje.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Connected to MongoDB successfully!');
+  })
+  .catch((error) => {
+    console.error('Failed to connect to MongoDB:', error);
+  });
+
+
+
+
 
 
 // API Create, Or Routing Implement

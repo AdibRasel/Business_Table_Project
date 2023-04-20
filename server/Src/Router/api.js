@@ -7,4 +7,8 @@ router.get("/ProductList/:pageNo/:perPage/:searchKey?",ProductsController.Produc
 
 
 
+// router.post("/CreateProduct",ProductsController.CreateProduct);
+
+
+
 module.exports=router;
