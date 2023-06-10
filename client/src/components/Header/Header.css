@@ -1,0 +1,50 @@
+.Header{
+    display: flex;
+    background-color: olivedrab;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    padding-top: 8px;
+}
+
+.LogoSide{
+    width: 30%;
+}
+
+.MenuSide{
+    width: 60%;
+}
+.MenuSide a{
+    background-color: #333;
+    margin-right: 5px;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 1000ms;
+    /* padding-top: 10px; */
+}
+.MenuSide a:hover{
+    background-color: olivedrab;
+    /* border: 1px solid #333; */
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 10px;
+}
+
+
+.ProfileSide{
+    width: 30%;
+}
+.ProfileSide a{
+    background-color: #166cd6;
+    margin-right: 5px;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 1000ms;
+    /* padding-top: 10px; */
+}
+.ProfileSide a:hover{
+    background-color: olivedrab;
+    /* border: 1px solid #333; */
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 10px;
+}

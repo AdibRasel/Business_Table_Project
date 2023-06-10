@@ -1,0 +1,54 @@
+
+
+
+/* MainBody */
+.MainBody{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px #333; */
+}
+/* Main Body Left Side start  */
+/* ------------------------------ */
+.LeftSide{
+    width: 70%;
+}
+
+/* Post box start  */
+.PostBox{
+    width: auto;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+}
+.PostTitle{
+    text-align: center;
+}
+
+.PostImage img{
+    max-width: 100%;
+}
+
+.PostDisc p{
+    text-align: justify;
+}
+
+
+/* ----------------------------- */
+/* Main Body Left Side end  */
+
+
+
+
+/* Main Body Right Side start  */
+/* ------------------------------- */
+.RightSide{
+    width: 30%;
+    margin: 10px;
+}
+/* ------------------------------- */
+/* Main Body Right Side end  */

@@ -1,0 +1,51 @@
+.Registraion{
+    margin: 40px;
+}
+.RegistraionForm{
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 20px;
+    padding: 20px;
+}
+.RegistraionForm h3{
+    text-align: center;
+}
+
+.Registraion_Name, .Mobile_Email, .Password{
+    display: flex;
+    
+}
+
+.FirstName, .LastName, .Mobile, .Email, .NormalPassword, .ConfirmPassword{
+    width: 50%;
+}
+
+.Image, .FirstName label, .LastName label, .Mobile label, .Email label, .NormalPassword label, .ConfirmPassword label{
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.Image, .FirstName input, .LastName input, .Mobile input, .Email input, .NormalPassword input, .ConfirmPassword input{
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.RegistrationSubmitBtn{
+    width: 98%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: olivedrab;
+    transition: 1000ms;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.RegistrationSubmitBtn:hover{
+    background-color: #166cd6;
+}
